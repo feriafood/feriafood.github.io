@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feriafood - Comida Fresca y de Calidad</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #43cea2, #185a9d);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-start; /* Alinea los elementos a la izquierda */
+            background-color: #185a9d;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            text-transform: none; /* Elimina la transformación a mayúsculas */
+            margin: 5px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #43cea2;
+            color: #fff;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #185a9d;
+            border-bottom: 3px solid #43cea2;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            flex: 1 1 100%;
+            max-width: 300px;
+            text-align: center;
+            padding: 15px;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product-item h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #185a9d;
+        }
+        .product-item p {
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .product-item a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #43cea2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .product-item a:hover {
+            background-color: #185a9d;
+        }
+        footer {
+            background-color: #185a9d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            nav a {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            .product-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            nav {
+                padding: 5px;
+            }
+            nav a {
+                padding: 6px;
+                font-size: 0.8rem;
+            }
+            .product-item {
+                padding: 10px;
+                font-size: 0.8rem;
+            }
+            footer p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feriafood</h1>
+        <p>Venta de Comida Fresca y de Calidad</p>
+    </header>
+    <nav>
+        <a href="#about">Nosotros</a>
+        <a href="#products">Productos</a>
+       <a href="#venta-mayorista">Venta Mayorista</a>
+        <a href="#contact">Contacto</a>
+     
+       
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>Nosotros</h2>
+            <p>Nos especializamos en ofrecer productos frescos y de alta calidad. Somos expertos en la venta de melón, uva de mesa, y otros productos seleccionados para garantizar la mejor experiencia para nuestros clientes.</p>
+        </section>
+        <section id="products" class="products">
+            <h2>Productos</h2>
+            <div class="products-grid">
+                <div class="product-item">
+                    <img src="https://i.blogs.es/b32837/melon/1366_2000.webp" alt="Melón Fresco">
+                    <h3>Melón Fresco</h3>
+                    <p>Delicioso melón fresco, ideal para disfrutar en cualquier momento.</p>
+                    <a href="https://wa.me/5492612316632">Pedir Informacion</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://www.quelenexport.cl/wp-content/uploads/2018/03/brujasfarms-uva.jpg" alt="Uva de Mesa">
+                    <h3>Uva de Mesa</h3>
+                    <p>Uvas de mesa seleccionadas, perfectas para tus comidas o postres.</p>
+                    <a href="https://wa.me/5492612316632">Pedir Informacion</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://www.nutricionyentrenamiento.fit/images/alimento/249.jpg" alt="Durazno">
+                    <h3>Durazno</h3>
+                    <p>Jugosos duraznos, perfectos para cualquier ocasión.</p>
+                    <a href="https://wa.me/5492612316632">Pedir Informacion</a>
+                </div>
+            </div>
+        </section>
+      <section id="venta-mayorista">
+    <h2>Venta Mayorista</h2>
+    <p>Ofrecemos melón y uva de mesa en grandes cantidades para negocios y eventos.</p>
+    <ul>
+        <li><strong>Melón:</strong> Desde 100 melones con precios competitivos y entrega en puntos de encuentro.</li>
+        <li><strong>Uva de Mesa:</strong> Disponibles en cajas de 20 kg. Calidad premium garantizada.</li>
+    </ul>
+    <p>Para consultas o pedidos mayoristas, contáctanos al <strong>+54 9 2612316632.</strong> 
+</section>
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <p>Para más información, por favor contáctanos:</p>
+            <p><strong>Email:</strong> elianmamani02@gmail.com</p>
+            <p><strong>Teléfono:</strong> <a href="https://wa.me/5492612316632" style="color: #43cea2;">+54 9 2612316632</a></p>
+           
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Elian Mamani. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
